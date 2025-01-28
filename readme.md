@@ -4,25 +4,25 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
+  <a href="https://github.com/DallleHurst/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+    <img src="./assets/img/DD-removebg-preview (1) (1).png" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">AWD-Seatwork-1-4-HD-25</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+  A web app to manage and display a leaderboard, allowing users to add players with names, scores, and levels, and sort them by score. Built with HTML, CSS, and JavaScript.
 </div>
 
 <br />
 
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
+![](https://visit-counter.vercel.app/counter.png?page=DallleHurst/AWD-Seatwork-1-4-HD-25)
 
-[![wakatime](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8.svg)](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8)
+[![wakatime](https://wakatime.com/@018f0308-ea23-4139-9e8f-2ef9a1f0d96f/projects/dwjhrxgvpr?start=2025-01-22&end=2025-01-28)
 
 ---
 
@@ -59,20 +59,22 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
+This project is a Player Management Leaderboard web app:
 
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+- What is the project: A web app for adding and displaying players with their names, scores, and levels, allowing sorting by score.
+- What’s the purpose: To manage and organize player information in a leaderboard, providing an interactive and visually appealing display.
+- Key components: Player input form, dynamic leaderboard table, score sorting button, and a modern design with a gold and blue color scheme.
+- Technology used and how it is used: HTML for structuring the page, CSS for styling the layout and visuals, and JavaScript for handling data input, player display, and sorting functionality.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- Player Input Form
+- Leaderboard Table
+- Sort Button
+- Player Count Display
+- Modern Design with Color Scheme and Background Image
+- Responsive Layout
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -119,4 +121,18 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Github  | Past Works design  | https://github.com/Dall4leHurst?tab=repositories |
+| FreeFrontend | design to use as guide | https://freefrontend.com/ |
+| Youtube   | how to work on JS | https://www.youtube.com/ |
+| Pexels | img used | https://www.pexels.com/ |
+| W3school | Ideas on JS and CSS and how to work them | https://www.w3schools.com/ |
+
+## Instructions
+
+- Enter a player's name, score (0-100), and level (minimum 1).
+- Click "Add Player" to add the player to the leaderboard.
+- Players can be sorted by score by clicking the "Sort by Score" button.
+- Only 10 players can be added at a time.
+
+## Deployment link
+https://dalllehurst.github.io/AWD-Seatwork-1-4-HD-25/
