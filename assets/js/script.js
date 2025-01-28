@@ -23,9 +23,9 @@ function renderPlayerList() {
 
         const scoreTd = document.createElement("td");
         scoreTd.textContent = `${player.score}/100`;
+
         const levelTd = document.createElement("td");
         levelTd.textContent = `Level ${player.level}`;
-
         tr.appendChild(nameTd);
         tr.appendChild(scoreTd);
         tr.appendChild(levelTd);
@@ -34,10 +34,7 @@ function renderPlayerList() {
     });
 }
 
-function addPlayer(event) {
-    event.preventDefault();
-    console.log('Add Player Button Clicked');
-
+function addPlayer() {
     if (players.length >= 10) {
         alert("You can only add up to 10 players.");
         return;
@@ -63,8 +60,6 @@ function addPlayer(event) {
 }
 
 function sortPlayers() {
-    console.log('Sort Button Clicked');
-
     players.sort((a, b) => {
         return isDescending ? b.score - a.score : a.score - b.score;
     });
@@ -75,5 +70,6 @@ function sortPlayers() {
     renderPlayerList();
 }
 
-playerForm.addEventListener("submit", addPlayer);
+document.getElementById("add-player-button").addEventListener("click", addPlayer);
+
 sortButton.addEventListener("click", sortPlayers);
