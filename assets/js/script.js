@@ -1,5 +1,3 @@
-// JavaScript for Player Management Leaderboard
-
 const playerForm = document.getElementById("player-form");
 const playerNameInput = document.getElementById("player-name");
 const playerScoreInput = document.getElementById("player-score");
@@ -24,10 +22,9 @@ function renderPlayerList() {
         nameTd.textContent = player.name;
 
         const scoreTd = document.createElement("td");
-        scoreTd.textContent = `${player.score}/100`; // Show score as a percentage
-
+        scoreTd.textContent = `${player.score}/100`;
         const levelTd = document.createElement("td");
-        levelTd.textContent = `Level ${player.level}`; // Display level with "Level" prefix
+        levelTd.textContent = `Level ${player.level}`;
 
         tr.appendChild(nameTd);
         tr.appendChild(scoreTd);
@@ -37,7 +34,10 @@ function renderPlayerList() {
     });
 }
 
-function addPlayer() {
+function addPlayer(event) {
+    event.preventDefault();
+    console.log('Add Player Button Clicked');
+
     if (players.length >= 10) {
         alert("You can only add up to 10 players.");
         return;
@@ -63,6 +63,8 @@ function addPlayer() {
 }
 
 function sortPlayers() {
+    console.log('Sort Button Clicked');
+
     players.sort((a, b) => {
         return isDescending ? b.score - a.score : a.score - b.score;
     });
@@ -73,8 +75,5 @@ function sortPlayers() {
     renderPlayerList();
 }
 
-// Update the event listener to handle the "Add Player" button click
-document.getElementById("add-player-button").addEventListener("click", addPlayer);
-
-// Sort button listener remains the same
+playerForm.addEventListener("submit", addPlayer);
 sortButton.addEventListener("click", sortPlayers);
