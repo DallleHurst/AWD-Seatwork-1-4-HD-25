@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Player Management Leaderboard">
+    <title>Player Management Leaderboard</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Player Management Leaderboard</h1>
+    </header>
+    
+    <main>
+        <section id="input-section">
+            <h2>Add Players</h2>
+            <form id="player-form">
+                <input type="text" id="player-name" placeholder="Player Name" required>
+                <input type="number" id="player-score" placeholder="Score (0-100)" min="0" max="100" required>
+                <input type="number" id="player-level" placeholder="Level" min="1" required>
+                <button type="button" id="add-player-button">Add Player</button>
+            </form>
+            <p id="player-count">Players added: 0/10</p>
+        </section>
+
+        <section id="leaderboard">
+            <h2>Leaderboard</h2>
+            <button id="sort-button">Sort by Score (Descending)</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Score</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
+                <tbody id="player-list">
+                    <!-- Players will be dynamically added here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
